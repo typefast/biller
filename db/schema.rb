@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20160111103244) do
     t.integer  "employee_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "account_id"
   end
 
   create_table "accounts", force: true do |t|
