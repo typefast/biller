@@ -9,3 +9,15 @@
     </tr>
   <% end %>
 </table>
+
+<% if @account.is_a?(Employee) %>
+  <h4>Time Entries</h4>
+  
+  <table>
+    <% @account.time_entries.each do |entry| %>
+      <tr>
+        <td><%= entry.inspect %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
